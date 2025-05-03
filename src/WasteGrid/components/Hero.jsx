@@ -3,6 +3,8 @@ import frame from '../assets/Frame 6.png'
 import heroImg from '../assets/hero-img.png'
 import scanImg from '../assets/scan.png'
 import earnImg from '../assets/earn.png'
+import leftLine from '../assets/Line 1.png'
+import rightLine from '../assets/Line 2.png'
 import { BiLogoApple, BiLogoPlayStore } from 'react-icons/bi'
 const Hero = () => {
   return (
@@ -35,8 +37,14 @@ const Hero = () => {
      <div className="md:absolute md:block hidden left-[-140px] bottom-50 m-auto z-22">
         <img className=' w-35 ' src={scanImg} alt="" />
      </div>
+     <div className="md:absolute md:block hidden left-[-10px] bottom-10 m-auto z-22">
+        <img className=' w-25 ' src={leftLine} alt="" />
+     </div>
      <div className="md:absolute md:block hidden right-[-140px]  bottom-5  m-auto z-22">
         <img className=' w-35 ' src={earnImg} alt="" />
+     </div>
+     <div className="md:absolute md:block hidden right-[-65px] bottom-10 m-auto z-22">
+        <img className=' w-30 ' src={rightLine} alt="" />
      </div>
     <img className='mt-10 m-auto w-50  md:w-100' src={heroImg} alt="" />
     </div>
