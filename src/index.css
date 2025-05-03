@@ -10,13 +10,18 @@
 .recent::-webkit-scrollbar,.answer::-webkit-scrollbar {
   display:none !important;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin:auto;
   box-sizing:border-box;
   /* min-height: 100vh; */
   /* overflow-y: hidden; */
   animation: fadeIn 1s ease-in-out;
+}
+a:hover{
+  color:green !important;
 }
 @keyframes fadeIn {
   0%{
@@ -75,7 +80,7 @@ body{
 }
 a {
   font-weight: 500;
-  color: #646cff;
+  color: gray;
   text-decoration: inherit;
 }
 a:hover {
