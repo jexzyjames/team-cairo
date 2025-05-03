@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import aboutImg from "../assets/aboutImg.png";
 import appImg from "../assets/appImg.png";
 import dollarImg from "../assets/dollar.png";
+import Features from "./Features";
 const About = () => {
   const [currentIcon, setCurrentIcon] = useState(0);
   const arrow = useRef(null);
@@ -36,13 +37,13 @@ const About = () => {
   ];
   useEffect(() => {}, [arrow, currentIcon]);
   return (
-    <div className="py-10 m-auto text-center ">
+    <div id='about' className="py-10 m-auto text-center ">
       <h1 className="font-bold text-2xl">About Us</h1>
       <p className="font-semibold">Built for Africa, Powered by Purpose</p>
 
       <div className="flex flex-col  mt-9  relative  mx-[3%]   ">
        
-       <div className="flex bg-green-50 xs:flex-col flex-col mx-[3%] sm:flex-col md:flex-row sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
+       <div className="flex bg-green-50 xs:flex-col flex-col mx-[3%] sm:flex-col md:flex-row-reverse sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
        
         <div className="flex bg-white  w-full max-w-[1150px]  flex-col"> 
           <img src={aboutImg} className="h-full   " alt="" />
@@ -65,7 +66,7 @@ const About = () => {
           What you can do with WasteGrid
         </h2>
 
-        <div className="flex gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-7 sm:overflow-x-hidden  w-full justify-between ">
+        {/* <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-7 sm:overflow-x-hidden  w-full justify-between ">
           <div className="flex sm:w-[99%] w-full max-w-[1050px]   relative justify-center items-center rounded-xl bg-gray-300   py-6  ">
             <img className="m-auto  " src={appImg} alt="" />
           </div>
@@ -123,7 +124,8 @@ const About = () => {
           </div>
 
 
-        </div>
+        </div> */}
+        <Features/>
 
       </div>
     </div>
