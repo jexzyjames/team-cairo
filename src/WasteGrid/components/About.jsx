@@ -43,14 +43,14 @@ const About = () => {
 
       <div className="flex flex-col  mt-9  relative  mx-[3%]   ">
        
-       <div className="flex bg-green-50 xs:flex-col flex-col mx-[3%] sm:flex-col md:flex-row-reverse sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
+       <div className="flex bg-green-50 xs:flex-col-reverse flex-col-reverse mx-[3%] sm:flex-col md:flex-row-reverse sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
        
         <div className="flex bg-white  w-full max-w-[1150px]  flex-col"> 
           <img src={aboutImg} className="h-full   " alt="" />
         </div>
 
         <div className="bg-white pb-4  flex mx-1 px-6 py-5  flex-col justify-center   relative text-left   gap-5   ">
-          <h2 className="font-bold sm:text-sm md:text-2xl lg:text-4xl">
+          <h2 className="font-bold sm:text-xl text-lg md:text-2xl lg:text-4xl">
             WasteGrid is tackling one of Africa's biggest challenges - waste.
           </h2>
           <p className="sm:text-sm md:text-md lg:text-3xl w-[100%]">

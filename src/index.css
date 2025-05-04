@@ -116,58 +116,5 @@ a:hover {
   transform: scale(1.04);
   opacity:0.57;
 }
-@media (max-width: 1200px) {
-  .cards{
-    grid-template-columns: repeat(3, 1fr);
-  }
-  body{
-    /* overflow-y: hidden; */
-    overflow-x:hidden;
-  }
-}
-@media (max-width:800px){
-  .extended{
-    font-size:12px !important;
-    width:100%;
-    max-width:280px !important;
-  animation: fadeIn 1s ease-in-out;
-    background: grey;
-  }
-  .chat{
-    /* width:100%; */
-    position:absolute;
-    left:55px;
-    font-size:12px;
-    display:inline-flex;
-    /* background:#ddd; */
-  }
-}
-@media (max-width: 600px) {
-  .cards{
-    grid-template-columns: repeat( 2, 1fr);
-  }
-  .text,body{
-    font-size: 0.8rem !important;
-  }
-  body{
-    overflow-y: scroll;
-  }
-  input{
-    width: 100%;
-    flex:1;
-  }
-}
-@media (max-width:340px){
-  .texts{
-    font-size: 10px !important;
-    
-  }
-  .card{
-    height: 100px;
-  }
-  .card img{
-    width:20px;
-  }
-}
 
 
