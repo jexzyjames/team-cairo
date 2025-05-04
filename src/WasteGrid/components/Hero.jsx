@@ -12,9 +12,9 @@ const Hero = () => {
     <div>
         <img className=' w-50 md:w-90 mb-2' src={frame} alt="" />
     </div>
-    <div className='w-full mb-0 relative  max-w-[500px]'>
+    <div className='w-full mb-0 relative  max-w-[700px]'>
 
-    <h1 className='md:text-4xl text-3xl text-amber-800 font-bold text'> WasteGrid, <span className='text-black'>Where Trash  <br /> Becomes </span><span className='text-950'>Power.</span></h1>
+    <h1 className='md:text-6xl text-3xl text-amber-800 font-bold text'> WasteGrid, <span className='text-black'>Where Trash  <br /> Becomes </span><span className='text-950'>Power.</span></h1>
     <p>Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you. </p>
 
     <div className='flex mt-4 justify-center gap-10 items-center' >

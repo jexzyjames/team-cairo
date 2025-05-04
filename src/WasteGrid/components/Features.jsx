@@ -36,7 +36,7 @@ const Features = () => {
       useEffect(() => {}, [arrow, currentIcon]);
   return (
     <div id='features' className=''>
-           <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-7 sm:overflow-x-hidden  w-full justify-between ">
+           <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-3 sm:overflow-x-hidden  w-full justify-between ">
                   <div className="flex sm:w-[99%] w-full max-w-[1050px]   relative justify-center items-center rounded-xl bg-gray-300   py-6  ">
                     <img className="m-auto  " src={appImg} alt="" />
                   </div>
@@ -55,7 +55,7 @@ const Features = () => {
                         ></span>
                       </div>
         
-                      <div className="flex sm:w-[99%] w-full flex-col gap-8 ">
+                      <div className="flex sm:text-md  sm:w-[99%] w-full flex-col gap-8 ">
                         {icons.map((icon, index) => {
                           return (
                             <div
@@ -81,11 +81,11 @@ const Features = () => {
                             >
                               <div className="flex gap-2 items-center">
                                 <img src={icon.img} alt="" />
-                                <h2 className="text-left font-bold text-xl">
+                                <h2 className="text-left sm:text-md  font-bold md:text-xl">
                                   {icon.title}
                                 </h2>
                               </div>
-                              <p className="text-lg text-left">{icon.text}</p>
+                              <p className="md:text-lg sm:text-md xs:text-sm text-left">{icon.text}</p>
                             </div>
                           );
                         })}

@@ -1,6 +1,7 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,9 +14,21 @@
 html{
   scroll-behavior: smooth;
 }
+.fixedNav{
+  position: sticky !important;
+  top:0;
+  z-index:2222; 
+  background: white; 
+  margin: 0;
+  left:0;
+  width:100%;
+  
+}
 body{
   margin:auto;
   box-sizing:border-box;
+  font-family:'Raleway', serif; 
+
   /* min-height: 100vh; */
   /* overflow-y: hidden; */
   animation: fadeIn 1s ease-in-out;
