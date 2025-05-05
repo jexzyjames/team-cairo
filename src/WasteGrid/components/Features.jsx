@@ -33,7 +33,7 @@ const Features = () => {
           text: "Exchange points for airitme, vouchers or donate",
         },
       ];
-      useEffect(() => {}, [arrow, currentIcon]);
+      useEffect(() => {}, [arrow,currentIcon ]);
   return (
     <div id='features' className=''>
            <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-3 sm:overflow-x-hidden  w-full justify-between ">
@@ -51,7 +51,7 @@ const Features = () => {
                       <div className="flex flex-col rounded-lg bg-gray-300   w-3">
                         <span
                           ref={arrow}
-                          className={`rounded-lg h-22 block w-3 fade bg-green-400`}
+                          className={`rounded-lg h-22 span block w-3 fade bg-green-400`}
                         ></span>
                       </div>
         
@@ -61,19 +61,33 @@ const Features = () => {
                             <div
                               key={icon.id}
                               onClick={() => {
-                                if (index === 0) {
-                                  setCurrentIcon(0);
-                                  arrow.current.style.marginTop = "0px";
-                                } else if (index === 1) {
-                                  setCurrentIcon(1);
-                                  arrow.current.style.marginTop = "125px";
-                                } else if (index === 2) {
-                                  setCurrentIcon(2);
-                                  arrow.current.style.marginTop = "235px";
-                                } else {
-                                  setCurrentIcon(3);
-                                  arrow.current.style.marginTop = "364px";
-                                }
+                                // if (index === 0) {
+                                //   setCurrentIcon(0);
+                                //   arrow.current.style.marginTop = "0px";
+                                //   arrow.current.classList.add('first') 
+                                //   return;
+
+                                // } else if (index === 1) {
+                                //   setCurrentIcon(1);
+                                //   arrow.current.style.marginTop = "125px";
+                                //   arrow.current.classList.add('second') 
+                                //   return;
+                                // } else if (index === 2) {
+                                //   setCurrentIcon(2);
+                                //   arrow.current.style.marginTop = "235px";
+                                //   arrow.current.classList.add('third') 
+                                //   return;
+
+                                // } else {
+                                //   setCurrentIcon(3);
+                                //   arrow.current.style.marginTop = "364px";
+                                //   arrow.current.classList.add('fourth') 
+                                //   return;
+
+                                // }
+                                setCurrentIcon(index)
+                                arrow.current.className = `rounded-lg h-22 span block w-3 fade bg-green-400 ${['first', 'second', 'third', 'fourth'][index]}`;
+
                               }}
                               className={` ${
                                 currentIcon === index && "bg-green-200 fade border-0"
