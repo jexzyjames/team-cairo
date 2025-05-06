@@ -5,7 +5,7 @@ import scanImg from '../assets/scan.png'
 import earnImg from '../assets/earn.png'
 import leftLine from '../assets/Line 1.png'
 import rightLine from '../assets/Line 2.png'
-import playStore from '../assets/playstore.png'
+import playStore from '../assets/playStore.png'
 import { BiLogoApple } from 'react-icons/bi'
 const Hero = () => {
   return (
