@@ -9,11 +9,11 @@ import anticlockwise from '../assets/anticlockwise.png'
 const WhatIsBuiltFor = () => {
   return (
     <div>
-          <div className='bg-green-300 m-0 p-0 w-full  left-0 right-0'>
+          <div className='bg-green-300 mt-[-37px] py-2 w-full  left-0 right-0'>
 
 <div className='m-auto px-[6%]  '> 
 
-<h1 className='text-xl mt-4 px-[6%] font-bold text-left'>WasteGrid built for</h1>
+<h1 className='text-xl mt-4 px-[1%] font-bold text-left'>WasteGrid built for</h1>
 <div className=" mt-6 mb-3 relative md:justify-between lg:px-[6%] gap-3  grid grid-cols-3  md:gap-2 md:flex md:flex-row  lg:grid-cols-4">
   <div>
     <img src={urban} alt="" />
