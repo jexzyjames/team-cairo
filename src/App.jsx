@@ -5,7 +5,6 @@ import Hero from './WasteGrid/components/Hero'
 import Navbar from './WasteGrid/components/Navbar'
 import WhatIsBuiltFor from './WasteGrid/components/WhatIsBuiltFor'
 
-
 function App() {
  
   return (
