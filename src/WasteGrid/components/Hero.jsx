@@ -5,7 +5,8 @@ import scanImg from '../assets/scan.png'
 import earnImg from '../assets/earn.png'
 import leftLine from '../assets/Line 1.png'
 import rightLine from '../assets/Line 2.png'
-import { BiLogoApple, BiLogoPlayStore } from 'react-icons/bi'
+import playStore from '../assets/playstore.png'
+import { BiLogoApple } from 'react-icons/bi'
 const Hero = () => {
   return (
     <div className='text-center mb-0 relative  py-5 bg-green-200 flex justify-center flex-col items-center'>
@@ -18,16 +19,16 @@ const Hero = () => {
     <p>Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you. </p>
 
     <div className='flex mt-4 justify-center gap-10 items-center' >
-        <div className='flex justify-center items-center rounded-md bg-black text-white px-2 py-1'>
-            <BiLogoPlayStore size={35}/>
-            <div className='flex flex-col items-start'>
+        <div className='flex cursor-pointer justify-center items-center rounded-md bg-black text-white px-2 py-1'>
+            <img className='w-6 mr-3' src={playStore} alt="" />
+            <div className='flex flex-col  items-start'>
                 <p className='text-sm'>Get it on</p>
                 <p className='font-bold '>Google Play</p>
             </div>
         </div>
 
-        <div className='flex justify-center items-center rounded-md bg-black text-white px-2 py-1'>
-            <BiLogoApple size={35}/>
+        <div className='flex cursor-pointer justify-center items-center rounded-md bg-black text-white px-2 py-1'>
+            <BiLogoApple className='mr-3' size={35}/>
             <div className='flex flex-col items-start'>
                 <p className='text-sm'>Download on</p>
                 <p className='font-bold '>App Store</p>

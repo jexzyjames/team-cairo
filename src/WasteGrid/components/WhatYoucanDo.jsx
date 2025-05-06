@@ -1,6 +1,9 @@
 import React,{useState,useEffect,useRef} from 'react'
 import appImg from "../assets/appImg.png";
-import dollarImg from "../assets/dollar.png";
+import iconImg from "../assets/icon.png";
+import earnImg from "../assets/dollar.png";
+import learnImg from "../assets/learn.png";
+import redeemImg from "../assets/redeem.png";
 
 const WhatYouCanDo = () => {
      const [currentIcon, setCurrentIcon] = useState(0);
@@ -8,28 +11,28 @@ const WhatYouCanDo = () => {
       const icons = [
         { 
           id: 0,
-          img: dollarImg,
+          img: iconImg,
           title: "Scan Waste",
           text: "Use Ai or barcode to identify and sort properly",
         },
     
         {
           id: 1,
-          img: dollarImg,
+          img: learnImg,
           title: "Learn",
           text: "Take short lessons and quizzes on recycling",
         },
     
         {
           id: 2,
-          img: dollarImg,
+          img: earnImg,
           title: "Earn",
           text: "Use Ai or barcode to identify and sort  properly",
         },
     
         {
           id: 3,
-          img: dollarImg,
+          img: redeemImg,
           title: "Redeem",
           text: "Exchange points for airitme, vouchers or donate",
         },
