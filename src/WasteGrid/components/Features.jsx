@@ -1,7 +1,7 @@
 import React from 'react'
 import game from '../assets/bro.png'
 import Ai from '../assets/amico.png'
-import barcode from '../assets/barcode.png'
+import barcodes from '../assets/barcodes.png'
 import wallet from '../assets/rafiki.png'
 import business from '../assets/business.png'
 const Features = () => { 
@@ -16,7 +16,7 @@ const Features = () => {
             </div>
 
             <div  className='text-center flex justify-center items-center flex-col'>
-                <img src={barcode} alt="" />
+                <img src={barcodes} alt="" />
                 <h1 className='font-bold text-lg'  >Barcode Identification</h1 >
                 <p className='text-center mt-2'>Scan product barcodes to know how to dispose or recycle them locally.</p>
             </div>
