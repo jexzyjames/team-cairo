@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import aboutImg from "../assets/aboutImg.png";
 import appImg from "../assets/appImg.png";
 import dollarImg from "../assets/dollar.png";
-import Features from "./Features";
+import WhatYouCanDo from "./WhatYoucanDo";
 const About = () => {
   const [currentIcon, setCurrentIcon] = useState(0);
   const arrow = useRef(null);
@@ -66,66 +66,8 @@ const About = () => {
           What you can do with WasteGrid
         </h2>
 
-        {/* <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-7 sm:overflow-x-hidden  w-full justify-between ">
-          <div className="flex sm:w-[99%] w-full max-w-[1050px]   relative justify-center items-center rounded-xl bg-gray-300   py-6  ">
-            <img className="m-auto  " src={appImg} alt="" />
-          </div>
-
-          <div className="flex flex-col  w-full  px-5">
-            <h1 className="sm:text-sm text-left md:text-2xl w-full lg:text-4xl font-bold">
-              {" "}
-              Get Familiarized with some can do on the WasteGrid app
-            </h1>
-
-            <div className="mt-6 flex gap-4">
-              <div className="flex flex-col rounded-lg bg-gray-300   w-3">
-                <span
-                  ref={arrow}
-                  className={`rounded-lg h-22 block w-3 fade bg-green-400`}
-                ></span>
-              </div>
-
-              <div className="flex sm:w-[99%] w-full flex-col gap-8 ">
-                {icons.map((icon, index) => {
-                  return (
-                    <div
-                      key={icon.id}
-                      onClick={() => {
-                        if (index === 0) {
-                          setCurrentIcon(0);
-                          arrow.current.style.marginTop = "0px";
-                        } else if (index === 1) {
-                          setCurrentIcon(1);
-                          arrow.current.style.marginTop = "125px";
-                        } else if (index === 2) {
-                          setCurrentIcon(2);
-                          arrow.current.style.marginTop = "235px";
-                        } else {
-                          setCurrentIcon(3);
-                          arrow.current.style.marginTop = "364px";
-                        }
-                      }}
-                      className={` ${
-                        currentIcon === index && "bg-green-200 fade border-0"
-                      } border border-gray-300 cursor-pointer rounded-lg p-4`}
-                    >
-                      <div className="flex gap-2 items-center">
-                        <img src={icon.img} alt="" />
-                        <h2 className="text-left font-bold text-xl">
-                          {icon.title}
-                        </h2>
-                      </div>
-                      <p className="text-lg text-left">{icon.text}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-
-
-        </div> */}
-        <Features/>
+    
+        <WhatYouCanDo/>
 
       </div>
     </div>

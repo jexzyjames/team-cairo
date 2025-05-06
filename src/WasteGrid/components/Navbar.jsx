@@ -12,7 +12,7 @@ const Navbar = () => {
      </div>
      <ul className='md:flex gap-4 text-xl hidden border rounded-2xl px-3 border-green-200 text-gray-700'>
         <li><a href="#about">About</a></li>
-        <li><a className='text-gray-300 cursor-pointer' href="#">How It Works</a></li>
+        <li><a className='text-gray-300 cursor-pointer' href="#works">How It Works</a></li>
         <li><a className='text-gray-300 cursor-pointer' href="#features">Features</a></li>
         <li><a className='text-gray-300 cursor-pointer' href="#">Rewards</a></li>
         <li><a className='text-gray-300 cursor-pointer' href="#">FAQ</a></li>

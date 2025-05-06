@@ -34,16 +34,16 @@ const Hero = () => {
             </div>
         </div>
     </div>
-     <div className="md:absolute md:block hidden left-[-290px] bottom-70 m-auto z-22">
+     <div className="md:absolute scanImg md:block hidden left-[-290px] bottom-70 m-auto z-22">
         <img className=' w-65 ' src={scanImg} alt="" />
      </div>
-     <div className="md:absolute md:block hidden md:left-[-60px] bottom-5 m-auto z-22">
+     <div className="md:absolute leftLine md:block hidden md:left-[-60px] bottom-5 m-auto z-22">
         <img className=' w-35 ' src={leftLine} alt="" />
      </div>
-     <div className="md:absolute md:block hidden right-[-250px]  bottom-5  m-auto z-22">
+     <div className="md:absolute earnImg md:block hidden right-[-250px]  bottom-5  m-auto z-22">
         <img className=' w-65 ' src={earnImg} alt="" />
      </div>
-     <div className="md:absolute md:block hidden right-[-125px] bottom-10 m-auto z-22">
+     <div className="md:absolute rightLine md:block hidden right-[-125px] bottom-10 m-auto z-22">
         <img className=' w-45 ' src={rightLine} alt="" />
      </div>
     <img className='mt-10 m-auto w-50  md:w-150' src={heroImg} alt="" />

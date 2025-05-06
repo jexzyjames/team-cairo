@@ -145,7 +145,7 @@ span.fourth{
     margin-top:475px !important;
   }
 }
-@media (max-width:800px){
+@media (max-width:900px){
   span.first{
     margin-top:0px !important ;
 
@@ -153,6 +153,10 @@ span.fourth{
   span.second{
     margin-top:160px !important ;
   
+  }
+  .earnImg,.scanImg,
+  .leftLine,.rightLine{
+    display:none;
   }
   span.third{
     margin-top:310px !important;

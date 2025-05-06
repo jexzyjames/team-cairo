@@ -1,7 +1,9 @@
 import './App.css'
 import About from './WasteGrid/components/About'
+import Features from './WasteGrid/components/Features'
 import Hero from './WasteGrid/components/Hero'
 import Navbar from './WasteGrid/components/Navbar'
+import WhatIsBuiltFor from './WasteGrid/components/WhatIsBuiltFor'
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
     <Navbar/>
     <Hero/>
     <About/>
+    <WhatIsBuiltFor/>
+    <Features/>
     </div>
   )
 }

@@ -1,114 +1,54 @@
-import React,{useState,useEffect,useRef} from 'react'
-import appImg from "../assets/appImg.png";
-import dollarImg from "../assets/dollar.png";
-const Features = () => {
-     const [currentIcon, setCurrentIcon] = useState(0);
-      const arrow = useRef(null);
-      const icons = [
-        {
-          id: 0,
-          img: dollarImg,
-          title: "Scan Waste",
-          text: "Use Ai or barcode to identify and sort properly",
-        },
-    
-        {
-          id: 1,
-          img: dollarImg,
-          title: "Learn",
-          text: "Take short lessons and quizzes on recycling",
-        },
-    
-        {
-          id: 2,
-          img: dollarImg,
-          title: "Earn",
-          text: "Use Ai or barcode to identify and sort  properly",
-        },
-    
-        {
-          id: 3,
-          img: dollarImg,
-          title: "Redeem",
-          text: "Exchange points for airitme, vouchers or donate",
-        },
-      ];
-      useEffect(() => {}, [arrow,currentIcon ]);
+import React from 'react'
+import game from '../assets/bro.png'
+import Ai from '../assets/amico.png'
+import barcode from '../assets/barcode.PNG'
+import wallet from '../assets/rafiki.png'
+import business from '../assets/business.png'
+const Features = () => { 
   return (
-    <div id='features' className=''>
-           <div className="flex feature gap-10 xs:flex-col    sm:flex-col md:flex-row flex-col relative lg:mx-[3%] sm:mx-3 sm:overflow-x-hidden  w-full justify-between ">
-                  <div className="flex sm:w-[99%] w-full max-w-[1050px]   relative justify-center items-center rounded-xl bg-gray-300   py-6  ">
-                    <img className="m-auto  " src={appImg} alt="" />
-                  </div>
-        
-                  <div className="flex flex-col  w-full  px-5">
-                    <h1 className="sm:text-sm text-left md:text-2xl w-full lg:text-4xl font-bold">
-                      {" "}
-                      Get Familiarized with some can do on the WasteGrid app
-                    </h1>
-        
-                    <div className="mt-6 flex gap-4">
-                      <div className="flex flex-col rounded-lg bg-gray-300   w-3">
-                        <span
-                          ref={arrow}
-                          className={`rounded-lg h-22 span block w-3 fade bg-green-400`}
-                        ></span>
-                      </div>
-        
-                      <div className="flex sm:text-md  sm:w-[99%] w-full flex-col gap-8 ">
-                        {icons.map((icon, index) => {
-                          return (
-                            <div
-                              key={icon.id}
-                              onClick={() => {
-                                // if (index === 0) {
-                                //   setCurrentIcon(0);
-                                //   arrow.current.style.marginTop = "0px";
-                                //   arrow.current.classList.add('first') 
-                                //   return;
+    <div id='features' className='mt-10 grid justify-center mx-auto items-center'>
+        <h1  className='text-center font-bold text-2xl mb-7'>Features</h1 >
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-9  px-[10%] w-full justify-center items-center'>
+            <div className='text-center flex justify-center items-center flex-col'>
+                <img  className='flex justify-center items-center' src={Ai} alt="" />
+                <h1 className='font-bold text-lg ' >AI Waste Scanner</h1 >
+                <p className='text-center mt-2'>Instantly recognizes waste materials using AI image recognition to guide proper sorting.</p>
+            </div>
 
-                                // } else if (index === 1) {
-                                //   setCurrentIcon(1);
-                                //   arrow.current.style.marginTop = "125px";
-                                //   arrow.current.classList.add('second') 
-                                //   return;
-                                // } else if (index === 2) {
-                                //   setCurrentIcon(2);
-                                //   arrow.current.style.marginTop = "235px";
-                                //   arrow.current.classList.add('third') 
-                                //   return;
+            <div  className='text-center flex justify-center items-center flex-col'>
+                <img src={barcode} alt="" />
+                <h1 className='font-bold text-lg'  >Barcode Identification</h1 >
+                <p className='text-center mt-2'>Scan product barcodes to know how to dispose or recycle them locally.</p>
+            </div>
 
-                                // } else {
-                                //   setCurrentIcon(3);
-                                //   arrow.current.style.marginTop = "364px";
-                                //   arrow.current.classList.add('fourth') 
-                                //   return;
+            <div  className='text-center flex justify-center items-center flex-col'>
+                <img src={game} alt="" />
+                <h1 className='font-bold text-lg' >Gamified Lessons & Eco Quizzes</h1 >
+                <p className='text-center mt-2'>Learn about recycling and sustainability through short, interactive, and rewarding lessons.</p>
+            </div>
 
-                                // }
-                                setCurrentIcon(index)
-                                arrow.current.className = `rounded-lg h-22 span block w-3 fade bg-green-400 ${['first', 'second', 'third', 'fourth'][index]}`;
+            <div  className='text-center flex justify-center items-center flex-col'>
+                <img src={business} alt="" />
+                <h1 className='font-bold text-lg' >AI Waste Scanner</h1 >
+                <p className='text-center mt-2'>Compete in daily or weekly challenges with friends and the community — climb the ranks and win prizes.</p>
+            </div>
 
-                              }}
-                              className={` ${
-                                currentIcon === index && "bg-green-200 fade border-0"
-                              } border border-gray-300 cursor-pointer rounded-lg p-4`}
-                            >
-                              <div className="flex gap-2 items-center">
-                                <img src={icon.img} alt="" />
-                                <h2 className="text-left sm:text-md  font-bold md:text-xl">
-                                  {icon.title}
-                                </h2>
-                              </div>
-                              <p className="md:text-lg sm:text-md xs:text-sm text-left">{icon.text}</p>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-        
-        
-                </div>
+            <div  className='text-center flex justify-center items-center flex-col'>
+                <img src={wallet} alt="" />
+                <h1 className='font-bold text-lg' >Reward Wallet</h1 >
+                <p className='text-center mt-2'>Track your coins and redeem them for airtime, data, vouchers, or donate to green causes.</p>
+   
+            </div>
+
+            
+            <div  className='text-center flex justify-center items-center flex-col'>
+                <img src={business} alt="" />
+                <h1 className='font-bold text-lg' >Reward Wallet</h1 >
+                <p className='text-center mt-2'>Get region-specific tips and info about disposal based on your location.</p>
+   
+            </div>
+        </div>
+
     </div>
   )
 }
