@@ -1,7 +1,7 @@
 import React from 'react'
 import game from '../assets/bro.png'
 import Ai from '../assets/amico.png'
-import barcode from '../assets/barcode.PNG'
+import barcode from '../assets/barcode.png'
 import wallet from '../assets/rafiki.png'
 import business from '../assets/business.png'
 const Features = () => { 
