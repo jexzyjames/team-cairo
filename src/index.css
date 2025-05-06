@@ -145,10 +145,20 @@ span.fourth{
     margin-top:365px !important;
   }
 }
+@media (max-width:1024px){
+  .earnImg,.scanImg,
+  .leftLine,.rightLine{
+    display:none;
+  }
+}
 @media (max-width:1070px){
   span.first{
     margin-top:0px !important ;
 
+}
+.earnImg,.scanImg,
+.leftLine,.rightLine{
+  display:none;
 }
   span.second{
     margin-top:150px !important ;
@@ -170,6 +180,10 @@ span.fourth{
     margin-top:150px !important ;
   
   }
+   .earnImg,.scanImg,
+  .leftLine,.rightLine{
+    display:none;
+  }
   span.third{
     margin-top:315px !important;
   }
@@ -183,7 +197,7 @@ span.fourth{
 
 }
   span.second{
-    margin-top:110px !important ;
+    margin-top:155px !important ;
   
   }
   .earnImg,.scanImg,
@@ -191,10 +205,23 @@ span.fourth{
     display:none;
   }
   span.third{
+    margin-top:320px !important;
+  }
+  span.fourth{
+    margin-top:473px !important;
+  }
+}
+@media (max-width:767px){
+  span.second{
+    margin-top:109px !important;
+
+  }
+  span.third{
     margin-top:220px !important;
   }
   span.fourth{
-    margin-top:335px !important;
+    margin-top:330px !important;
+    
   }
 }
 @media  (max-width:600px){
@@ -210,6 +237,6 @@ span.fourth{
     margin-top:290px !important;
   }
   span.fourth{
-    margin-top:425px !important;
+    margin-top:429px !important;
   }
 }
