@@ -44,53 +44,15 @@ a:hover{
     opacity:1
   }
 }
-.loaded{
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transition: all 0.2s ease-in-out;
-  height:90px;
-  width:90px;
-  border:16px solid #f3f3f3;
-  border-top:16px solid blue;
-  border-right:16px solid green;
-  border-bottom:16px solid red;
-  border-left:16px solid pink;
-  border-radius:50%;
-  /* background: black; */
-  animation: rotate 1s linear infinite;
-  display: flex;
-  justify-content: center;
+
+a::active{
+  color:green;
 }
 .fade{
   animation: fadeIn 1s ease-in-out;
   
 }
-.loading{
-  height:120px;
-  width:120px;
-  border:16px solid #f3f3f3;
-  border-top:16px solid blue;
-  border-right:16px solid green;
-  border-bottom:16px solid red;
-  border-left:16px solid pink;
-  border-radius:50%;
-  /* background: black; */
-  animation: rotate 1s linear infinite;
-}
-@keyframes rotate{
-  0%{
-    transform:rotate(0deg)
 
-  }
-  100%{
-    transform:rotate(360deg)
-
-  }
-}
 a {
   font-weight: 500;
   color: gray;
@@ -99,23 +61,7 @@ a {
 a:hover {
   color: green !important;
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    transition :all;
-    cursor:pointer;
-    /* padding: 20px; */
 
-}
-.card{
-  transition :all ease-in-out;
-  cursor:pointer;
-}
-.card:hover{
-  transform: scale(1.04);
-  opacity:0.57;
-}
 span.first{
   margin-top:0px !important;
 }
