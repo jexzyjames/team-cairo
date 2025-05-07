@@ -52,10 +52,10 @@ const WhatYouCanDo = () => {
                     </h1>
         
                     <div className="mt-6 flex gap-4">
-                      <div className="flex flex-col rounded-lg bg-gray-300   w-3">
+                      <div className="flex flex-col rounded-lg bg-gray-300   w-2">
                         <span
                           ref={arrow}
-                          className={`rounded-lg h-22 span block w-3 fade bg-green-400`}
+                          className={`rounded-lg h-22 span block w-2 fade bg-green-400`}
                         ></span>
                       </div>
         
@@ -65,32 +65,9 @@ const WhatYouCanDo = () => {
                             <div
                               key={icon.id}
                               onClick={() => {
-                                // if (index === 0) {
-                                //   setCurrentIcon(0);
-                                //   arrow.current.style.marginTop = "0px";
-                                //   arrow.current.classList.add('first') 
-                                //   return;
-
-                                // } else if (index === 1) {
-                                //   setCurrentIcon(1);
-                                //   arrow.current.style.marginTop = "125px";
-                                //   arrow.current.classList.add('second') 
-                                //   return;
-                                // } else if (index === 2) {
-                                //   setCurrentIcon(2);
-                                //   arrow.current.style.marginTop = "235px";
-                                //   arrow.current.classList.add('third') 
-                                //   return;
-
-                                // } else {
-                                //   setCurrentIcon(3);
-                                //   arrow.current.style.marginTop = "364px";
-                                //   arrow.current.classList.add('fourth') 
-                                //   return;
-
-                                // }
+                                
                                 setCurrentIcon(index)
-                                arrow.current.className = `rounded-lg h-22 span block w-3 fade bg-green-400 ${['first', 'second', 'third', 'fourth'][index]}`;
+                                arrow.current.className = `rounded-lg h-22 span block w-2 fade bg-green-400 ${['first', 'second', 'third', 'fourth'][index]}`;
 
                               }}
                               className={` ${

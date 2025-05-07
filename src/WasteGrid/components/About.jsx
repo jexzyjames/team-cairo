@@ -43,9 +43,9 @@ const About = () => {
 
       <div className="flex flex-col  mt-9  relative  mx-[3%]   ">
        
-       <div className="flex bg-green-50 xs:flex-col-reverse flex-col-reverse mx-[3%] sm:flex-col md:flex-row-reverse sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
+       <div className="flex md:bg-green-50 xs:flex-col-reverse flex-col-reverse mx-[1%] sm:flex-col md:flex-row-reverse sm:gap-3  md:gap-0 w-full px-[1px]  justify-between rounded-2xl  ">
        
-        <div className="flex bg-white  w-full max-w-[1150px]  flex-col"> 
+        <div className="flex bg-white px-1 rounded-2xl  w-full md:max-w-[1150px]  flex-col"> 
           <img src={aboutImg} className="h-full   " alt="" />
         </div>
 
