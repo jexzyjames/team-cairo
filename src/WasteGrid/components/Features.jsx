@@ -29,7 +29,7 @@ const Features = () => {
 
             <div  className='text-center flex justify-center items-center flex-col'>
                 <img src={business} alt="" />
-                <h1 className='font-bold text-lg' >AI Waste Scanner</h1 >
+                <h1 className='font-bold text-lg' >Eco-Challenges & Leaderboards</h1 >
                 <p className='text-center mt-2'>Compete in daily or weekly challenges with friends and the community — climb the ranks and win prizes.</p>
             </div>
 
@@ -43,7 +43,7 @@ const Features = () => {
             
             <div  className='text-center flex justify-center items-center flex-col'>
                 <img src={business} alt="" />
-                <h1 className='font-bold text-lg' >Reward Wallet</h1 >
+                <h1 className='font-bold text-lg' >Localized Recycling Tips</h1 >
                 <p className='text-center mt-2'>Get region-specific tips and info about disposal based on your location.</p>
    
             </div>
