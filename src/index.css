@@ -44,7 +44,18 @@ a:hover{
     opacity:1
   }
 }
-
+@keyframes fadesIn {
+  0%{
+    opacity:0;
+    height:0px;
+    max-height:0px;
+  }
+  100%{
+    opacity:1;
+    height:auto;
+    max-height:500px;
+  }
+}
 a::active{
   color:green;
 }
@@ -52,10 +63,13 @@ a::active{
   animation: fadeIn 1s ease-in-out;
   
 }
-
+.fades{
+  animation: fadesIn 0.7s forwards ease-in-out;
+  transition:all 0.3s ease-in-out ;
+  
+}
 a {
   font-weight: 500;
-  color: gray;
   text-decoration: inherit;
 }
 a:hover {
