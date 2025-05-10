@@ -22,18 +22,18 @@ const Navbar = () => {
         <li><a className='text-gray-600' href="#about">About</a></li>
         <li><a className='text-gray-600 cursor-pointer' href="#works">How It Works</a></li>
         <li><a className='text-gray-600 cursor-pointer' href="#features">Features</a></li>
-        <li><a className='text-gray-600 cursor-pointer' href="#">Rewards</a></li>
-        <li><a className='text-gray-600 cursor-pointer' href="#">FAQ</a></li>
+        <li><a className='text-gray-600 cursor-pointer' href="#rewards">Rewards</a></li>
+        <li><a className='text-gray-600 cursor-pointer' href="#faq">FAQ</a></li>
      </ul>
 
     {isOpen && <div className='md:hidden fades text-white absolute right-0 w-full  top-20 z- left-0 bg-[#444444] block'>
-      <ul className='mt-20 p-7 flex flex-col fade relative  gap-13 text-white '>
+      <ul className='mt-20 p-7 flex flex-col fade relative  gap-14 text-white '>
       <img onClick={()=> setIsOpen((prev)=>!prev)} className=' cursor-pointer absolute right-8  top-[-20px] flex justify-end items-end float-right' src={closeIcon} alt="" />
         <li onClick={()=>setIsOpen(false)} className='flex items-center gap-5'><span><img src={aboutIcon} alt="" /></span><a href="#about">About</a></li>
         <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={workIcon} alt="" /></span><a className='text-white cursor-pointer' href="#works">How It Works</a></li>
         <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={featureIcon} alt="" /></span><a className='text-white cursor-pointer' href="#features">Features</a></li>
-        <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={rewardsIcon} alt="" /></span><a className='text-white cursor-pointer' href="#">Rewards</a></li>
-        <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={faqIcon} alt="" /></span><a className='text-white cursor-pointer' href="#">FAQ</a></li>
+        <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={rewardsIcon} alt="" /></span><a className='text-white cursor-pointer' href="#rewards">Rewards</a></li>
+        <li onClick={()=>setIsOpen(false)} className='text-white flex items-center gap-5' ><span><img src={faqIcon} alt="" /></span><a className='text-white cursor-pointer' href="#faq">FAQ</a></li>
      </ul>
 
      </div>}

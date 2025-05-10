@@ -6,9 +6,9 @@ import wallet from '../assets/rafiki.png'
 import business from '../assets/business.png'
 const Features = () => { 
   return (
-    <div id='features' className='mt-10 grid justify-center mx-auto items-center'>
+    <div id='features' className='mt-10 grid  mx-auto '>
         <h1  className='text-center font-bold text-2xl mb-7'>Features</h1 >
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-9  px-[10%] w-full justify-center items-center'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-9  px-[10%] w-full '>
             <div className='text-center flex justify-center items-center flex-col'>
                 <img  className='flex justify-center items-center' src={Ai} alt="" />
                 <h1 className='font-bold text-lg ' >AI Waste Scanner</h1 >
@@ -21,7 +21,7 @@ const Features = () => {
                 <p className='text-center mt-2'>Scan product barcodes to know how to dispose or recycle them locally.</p>
             </div>
 
-            <div  className='text-center flex justify-center items-center flex-col'>
+            <div  className='text-center flex  justify-center items-center flex-col'>
                 <img src={game} alt="" />
                 <h1 className='font-bold text-lg' >Gamified Lessons & Eco Quizzes</h1 >
                 <p className='text-center mt-2'>Learn about recycling and sustainability through short, interactive, and rewarding lessons.</p>
