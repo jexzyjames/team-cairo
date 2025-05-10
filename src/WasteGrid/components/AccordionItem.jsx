@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import AccordionItems from '../components/Faq';
+import { useState } from "react";
+import AccordionItems from "../components/Faq";
 
 const AccordionItem = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
