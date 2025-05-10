@@ -1,5 +1,5 @@
 import React from "react";
-import rewardImg from "../assets/rewardImg.png";
+import rewardImg from "../assets/rewardIcon.png";
 import gloImg from "../assets/glo.png";
 import airtelImg from "../assets/airtel.png";
 import shopriteImg from "../assets/shoprite.png";
