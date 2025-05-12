@@ -56,7 +56,7 @@ const About = () => {
           <p className="sm:text-sm md:text-md lg:text-3xl w-[100%]">
             Through smart tech and gamified learning, we help people like you
             scan, sort and recycle smarter - and get rewarded for it. <br />{" "}
-            It's eco-education made simple,social and impactful.{" "}
+            It's eco-education made simple, social and impactful.{" "}
           </p>
         </div>
        </div>
